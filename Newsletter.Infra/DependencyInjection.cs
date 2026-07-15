@@ -10,7 +10,7 @@ namespace Newsletter.Infra
     {
         public static IServiceCollection AddServices(this IServiceCollection services) {
 
-            // services.AddScoped<INewsletterService, NewsletterService>();
+            services.AddScoped<INewsletterService, NewsletterService>();
             services.AddScoped<IEmailService, EmailService>();
            
             return services;
