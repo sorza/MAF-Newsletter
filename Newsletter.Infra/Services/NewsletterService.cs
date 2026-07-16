@@ -32,6 +32,7 @@ namespace Newsletter.Infra.Services
             var body = await newsletterGeneratorAgent.RunAsync(posts, cancellationToken);
 
             logger.LogInformation("Recuperando os assinantes...");
+
             var subscribers = await subscriberRepository.GetAllAsync(cancellationToken);
 
             logger.LogInformation("Enviando o newsletter para os assinantes...");
