@@ -6,10 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Prompts\" />
-  </ItemGroup>
-
 	<ItemGroup>
 		<EmbeddedResource Include="Prompts\*.md" />
 	</ItemGroup>
